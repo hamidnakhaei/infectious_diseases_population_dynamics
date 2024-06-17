@@ -74,5 +74,15 @@ To eradicate the disease, we vaccinate a proportion $p$ of the population. The n
 ![](https://github.com/hamidnakhaei/infectious_diseases_population_dynamics/blob/b34b263da264fa8ac7649a85a604afeed4b58203/Figures/12.png) \
 If $R_v < 1$, the disease is eradicated. Rearranging the inequality we will have: \
 ![](https://github.com/hamidnakhaei/infectious_diseases_population_dynamics/blob/b34b263da264fa8ac7649a85a604afeed4b58203/Figures/13.png) \
-For example, with smallpox $R_0 = 4$, we find $p = 75/%$, meaning $75/%$ of the population must be vaccinated for complete eradication. \
+For example, with smallpox $R_0 = 4$, we find $p = 75 \\%$, meaning $75 \\%$ of the population must be vaccinated for complete eradication.
 # Endemic Diseases (Considering Birth and Death Rates)
+Endemic diseases sometimes spread among large populations, like cities or countries. Here, population changes due to birth and death are considered. The diagram is: \
+![](https://github.com/hamidnakhaei/infectious_diseases_population_dynamics/blob/b34b263da264fa8ac7649a85a604afeed4b58203/Figures/14.png) \
+where $a$ is the birth rate, $b$ is the death rate, and $N$ is the total population. \
+![](https://github.com/hamidnakhaei/infectious_diseases_population_dynamics/blob/b34b263da264fa8ac7649a85a604afeed4b58203/Figures/15.png) \
+![](https://github.com/hamidnakhaei/infectious_diseases_population_dynamics/blob/b34b263da264fa8ac7649a85a604afeed4b58203/Figures/16.png) \
+Putting all the equations together we will have: $dN/dt= (b-a) \times N$. If $a = b$, the population remains constant. For a reasonably short time interval, population change can be approximated as zero. 
+# Solving the Equation with Birth and Death Rates in MATLAB
+Solving this problem is similar to the previous scenario. The only difference is the set of equations, now including birth and death rates. (The MATLAB file solving these equations is attached.)
+In MATLAB, the equations are defined in the function: \
+![](https://github.com/hamidnakhaei/infectious_diseases_population_dynamics/blob/b34b263da264fa8ac7649a85a604afeed4b58203/Figures/16.png) \
