@@ -18,8 +18,8 @@ In this project, we consider two different scenarios to derive the relevant form
 ### Diagram for Population Change Rate and Modeling:
 
 Based on the above assumptions, we construct the following diagrams:
-![](/Figures/1.png)
+![kh](Figures/1.png)
 # Modeling:
 If we assume the entire healthy population starts with a single infected individual, then as the number of healthy individuals (denoted by ${I(t)}$) increases, the number of new infections also increases. This is proportional to the number of healthy individuals, with a proportionality constant $\beta$ (transmission rate). Thus, the number of new infections from all infected individuals is equal to:
-![](/Figures/2.png)
+![qwe](Figures/1.png)
 
