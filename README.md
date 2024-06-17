@@ -28,6 +28,14 @@ There are three categories of individuals removed from the system:
 2.	Individuals who die from the disease.
 3.	Individuals who are quarantined.
 Similar to the previous step, the number of individuals who recover is proportional to the number of infected individuals, with $\gamma$ as the recovery rate.
-Equation for Recovery Rate:
-![aspd](Figures/3.png)
+### Equation for Recovery Rate: <br />
+![[aspd](Figures/3.png)](https://github.com/hamidnakhaei/infectious_diseases_population_dynamics/blob/898a7a302e96823705d31c8ed8d57759c36a0ad5/Figures/3.png)
+
+### Modeling and Formulation:
+Based on the above assumptions, we are ready to formulate the problem. The formulation is as follows:
+![](https://github.com/hamidnakhaei/infectious_diseases_population_dynamics/blob/898a7a302e96823705d31c8ed8d57759c36a0ad5/Figures/4.png)
+### Initial Conditions:
+$$S(0) = s_0 , \qquad  I(0)=i_0, \qquad  R(0)=0$$
+Where $R(t)$ represents the number of recovered individuals over time. \
+Using these initial conditions, we can solve the differential equations to model the spread of the infectious disease under the given assumptions.
 
