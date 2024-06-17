@@ -70,3 +70,9 @@ Thus:
 - $\frac{dI}{dt} < 0$ when $\frac{\beta s}{\gamma} < 1$ \
 Where $\frac{\beta s}{\gamma}=R_0$
 # Vaccination to Eradicate Disease
+To eradicate the disease, we vaccinate a proportion $p$ of the population. The new $R_0$ (denoted as $R_v$) is: \
+![](https://github.com/hamidnakhaei/infectious_diseases_population_dynamics/blob/b34b263da264fa8ac7649a85a604afeed4b58203/Figures/12.png) \
+If $R_v < 1$, the disease is eradicated. Rearranging the inequality we will have: \
+![](https://github.com/hamidnakhaei/infectious_diseases_population_dynamics/blob/b34b263da264fa8ac7649a85a604afeed4b58203/Figures/13.png) \
+For example, with smallpox $R_0 = 4$, we find $p = 75/%$, meaning $75/%$ of the population must be vaccinated for complete eradication. \
+# Endemic Diseases (Considering Birth and Death Rates)
