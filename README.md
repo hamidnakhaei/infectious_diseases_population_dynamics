@@ -6,17 +6,20 @@ This project consists of two parts:
 
 In each of these scenarios, we examine a sample problem with given initial conditions.
 
-# Assumptions Necessary for Deriving Equations
+## Assumptions Necessary for Deriving Equations
 In this project, we consider two different scenarios to derive the relevant formulas and equations, each based on a set of assumptions. In the first scenario, we do not account for population changes due to natural births and deaths, while in the second scenario, we include these factors.
-## Assumptions:
+### Assumptions:
 1.	The population of infected individuals and those at risk is sufficiently large.
 2.	Births and natural deaths are ignored; the disease spreads solely through contact.
 3.	The incubation period, during which an infected individual is unaware but can still transmit the disease, is considered negligible (zero).
 4.	All individuals who recover from the disease are assumed to gain complete immunity, meaning they cannot contract the disease again.
 5.	The population of healthy and infected individuals is homogeneously mixed.
 
-# Diagram for Population Change Rate and Modeling:
+### Diagram for Population Change Rate and Modeling:
 
 Based on the above assumptions, we construct the following diagrams:
-
+![](/Figures/1.png)
+# Modeling:
+If we assume the entire healthy population starts with a single infected individual, then as the number of healthy individuals (denoted by ${I(t)}$) increases, the number of new infections also increases. This is proportional to the number of healthy individuals, with a proportionality constant $\beta$ (transmission rate). Thus, the number of new infections from all infected individuals is equal to:
+![](/Figures/2.png)
 
