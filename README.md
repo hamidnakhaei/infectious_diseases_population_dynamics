@@ -57,4 +57,16 @@ The model above does not account for natural births and deaths, or diseases with
 If we assume that the rate of new infections is proportional to $S(t) \times I(t)$, an unreasonably large number may result. Therefore, we impose a maximum limit for this parameter: $\beta = p \times c(N)/N$, where $N$ is the total population and $c(N)$ is the contact rate for disease transmission.
 # Reviewing the Derived Equations
 Numerical analysis reveals a threshold for initial conditions. If the initial susceptible population $s_0$ is below a certain threshold, the number of infected individuals decreases over time. Conversely, if $s_0$ exceeds this threshold, $I(t)$ initially increases and then decreases. This threshold appears independent of $i_0$. We define $R_0$ (basic reproduction number) as:
+$$R_0 = \frac{\beta s_0}{\gamma}$$
+If $R_0<1$, the disease diminishes, and vice versa. $R_0$ indicates the speed of disease spread within a population. Examples include:
+-	Influenza: $R_0 = 3−4$
+-	Measles: $R_0 = 16−18$
+-	Smallpox: $R_0=4$
+-	Chickenpox: $R_0=10−12$ \
+From the earlier equations: \
 ![](https://github.com/hamidnakhaei/infectious_diseases_population_dynamics/blob/b34b263da264fa8ac7649a85a604afeed4b58203/Figures/10.png) \
+Thus:
+- $\frac{dI}{dt} > 0$ when $\frac{\beta s}{\gamma} > 1$
+- $\frac{dI}{dt} < 0$ when $\frac{\beta s}{\gamma} < 1$ \
+Where $\frac{\beta s}{\gamma}=R_0$
+# Vaccination to Eradicate Disease
