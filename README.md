@@ -39,3 +39,10 @@ $$S(0) = s_0 , \qquad  I(0)=i_0, \qquad  R(0)=0$$
 Where $R(t)$ represents the number of recovered individuals over time. \
 Using these initial conditions, we can solve the differential equations to model the spread of the infectious disease under the given assumptions.
 
+# Solving Equations Using MATLAB
+To solve the above system of differential equations in MATLAB, we use the `ode45` function. In the main function, we use the `option` parameter to set the precision for solving the equations. We then specify the time interval for which we want to find the solution and input the initial conditions, as shown in the following figure: \
+![](https://github.com/hamidnakhaei/infectious_diseases_population_dynamics/blob/18cef8a392685af526f96711670ab08165999309/Figures/5.png) \
+In the function defined separately for `ode45`, we assign ${I(t)}$ to $y(1)$ and $S(t)$ to $y(2)$. Thus, we have $dI/dt = dy(1)$ and $dS/dt=dy(2)$. This step is essential for transforming the differential equations into a format that MATLAB can understand. The equations must be expressed such that one side contains the derivatives $dy(n)$, and the other side contains the non-derivative functions $y(n)$. As illustrated in the MATLAB code for `ode45`:\
+![](https://github.com/hamidnakhaei/infectious_diseases_population_dynamics/blob/b34b263da264fa8ac7649a85a604afeed4b58203/Figures/6.png) \
+This function solves the equations with the defined precision over very small intervals and stores the results as column vectors or matrices in $y(1)$ and $y(2)$, which correspond to $S(t)$ and $I(t)$ respectively. For plotting the graphs, we use the `plot` function. As previously mentioned, `ode45` stores the solutions as a column matrix, which is used along with the time matrix for plotting.
+# Example Problem and Analysis
