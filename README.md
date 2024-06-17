@@ -21,5 +21,13 @@ Based on the above assumptions, we construct the following diagrams:
 ![kh](Figures/1.png)
 # Modeling:
 If we assume the entire healthy population starts with a single infected individual, then as the number of healthy individuals (denoted by ${I(t)}$) increases, the number of new infections also increases. This is proportional to the number of healthy individuals, with a proportionality constant $\beta$ (transmission rate). Thus, the number of new infections from all infected individuals is equal to:
-![qwe](Figures/1.png)
+![qwe](https://github.com/hamidnakhaei/infectious_diseases_population_dynamics/blob/53ce15120eb10232ec85d6cda51f3ce36606ddf9/Figures/2.png)
+### Removing Individuals from the System:
+There are three categories of individuals removed from the system:
+1.	Individuals who recover.
+2.	Individuals who die from the disease.
+3.	Individuals who are quarantined.
+Similar to the previous step, the number of individuals who recover is proportional to the number of infected individuals, with $\gamma$ as the recovery rate.
+Equation for Recovery Rate:
+![aspd](Figures/3.png)
 
