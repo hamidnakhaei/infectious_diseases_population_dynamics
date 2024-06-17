@@ -85,4 +85,12 @@ Putting all the equations together we will have: $dN/dt= (b-a) \times N$. If $a 
 # Solving the Equation with Birth and Death Rates in MATLAB
 Solving this problem is similar to the previous scenario. The only difference is the set of equations, now including birth and death rates. (The MATLAB file solving these equations is attached.)
 In MATLAB, the equations are defined in the function: \
-![](https://github.com/hamidnakhaei/infectious_diseases_population_dynamics/blob/b34b263da264fa8ac7649a85a604afeed4b58203/Figures/16.png) \
+![](https://github.com/hamidnakhaei/infectious_diseases_population_dynamics/blob/b34b263da264fa8ac7649a85a604afeed4b58203/Figures/17.png) \
+And the rest is similar. Now, consider an example as follows:
+$$N = 10^6; \quad
+\beta = 10^{-6}; \quad
+\gamma = \frac{1}{3}; \quad
+A = b = \frac{1}{50}; \quad
+S_0 = 9 \times 10^5; \quad
+I_0 = 10^5$$ \
+![](https://github.com/hamidnakhaei/infectious_diseases_population_dynamics/blob/b34b263da264fa8ac7649a85a604afeed4b58203/Figures/18.png) \
